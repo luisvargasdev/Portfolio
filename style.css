@@ -8,7 +8,7 @@
 }
 
 html{
-    /*me permite deslizar cuando hago click en los links del menu*/
+    /*permite deslizar cuando hago click en los links del menu*/
     scroll-behavior: smooth;
 }
 
