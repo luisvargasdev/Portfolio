@@ -1,6 +1,6 @@
 let menuVisible = false;
 
-//función que oculta o muestra el menú
+// función que oculta o muestra el menú
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList = "";
@@ -13,12 +13,12 @@ function mostrarOcultarMenu(){
 }
 
 function seleccionar(){
-    //ocultar el menu una vez que se seleccione alguna opción
+    // ocultar el menu una vez que se seleccione alguna opción
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
 
-//función que aplica las animaciones de habilidades
+// función que aplica las animaciones de habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
     var distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
@@ -38,7 +38,12 @@ function efectoHabilidades(){
     }
 }
 
-//detecto el scroll para aplicar la animación de la barra de habilidades
+// detecto el scroll para aplicar la animación de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();
+}
+
+// codigo para descargar el curriculum
+function descargaCv(){
+    window.open("docs/CV Luis Vargas Pérez.pdf", "_blank");
 }
